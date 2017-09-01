@@ -1,0 +1,145 @@
+body {
+	background-image: url("amsterdam.jpg");
+	background-repeat: no-repeat;
+	font-family: 'Droid Sans', sans-serif;
+	position: relative;
+}
+
+.main {
+	background-color: black;
+	height: 600px;
+	width: 1000px;
+	margin-top: 5%;
+	margin-left:15%;
+	padding: 2%;
+	opacity: 0.8;
+	display: inline-block;
+	position: relative;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+}
+
+h2 {
+	color: white;
+	text-align: center;
+}
+
+p {
+	color: white;
+	text-align: center;
+}
+
+
+.actie  {
+/*	border: solid red 2px;*/
+	width: 1000px;
+	margin: 10%;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 3%;
+    position: relative;
+    background-color: black;
+    opacity: 1;
+    text-align: center;
+}
+
+form {
+	color: white;
+	font-size: 20px;
+}
+
+input {
+	padding: 10px;
+	border: solid orange 2px;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	width: 500px;
+}
+
+input:hover {
+	border: orange solid 2px;
+}
+
+#inkomen {
+	margin: 0 auto;
+	position: relative;
+}
+
+.toelichting {
+	background-color: green;
+	width: 320px;
+}
+
+.value {
+	opacity: 0.3;
+}
+
+.bar {
+	width: 100%;
+	background-color: white;
+	height: 20px;
+}
+
+.progress {
+	width: 1%;
+	background-color: green;
+	height: 20px;
+}
+
+button {
+	padding: 10px;
+	border: solid orange 2px;
+	background-color: orange;
+	color: white;
+	cursor: pointer;
+}
+
+button:hover {
+	border: solid #ff3300 2px;
+	background-color: #ff3300;
+}
+
+.barcomplete {
+	margin-top:3%;
+}
+
+#tekst {
+	text-decoration:underline;
+	font-weight: bold;
+}
+
+.results {
+	font-size: 16px;
+	font-style: italic;
+}
+
+.modal {
+	width: 80%;
+	height: auto;
+	margin-top: 15%;
+	margin-left: 8%;
+	background-color: orange;
+	display: none;
+	z-index: 1;
+	padding: 1%;
+	position: absolute;
+}
+
+.modal-content {
+	padding: 3%;
+	width: 100%;
+}
+
+.close {
+	float: right;
+	margin-right: 2%;
+	margin-top: 2%;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+}

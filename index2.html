@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Final exercise - Frodo</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="custom.css">
+	<script type="text/javascript" src="myscript.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+
+
+</head>
+<body>
+
+	<div id="popinfo" class="modal">
+
+		<span class="close">&times;</span>
+
+		<div class="modal-content">
+    		<h2>Your results</h2>
+    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    		<p>Your income is: &euro; <span id="verdient"></span></p>
+    		<p>Your rent is: &euro; <span id="huur1"></span></p>
+    		<p>Your utility bill is: &euro; <span id="gas1"></span></p>
+    		<p>Your food costs are: &euro; <span id="eten"></span></p>
+    		<p>You have spent: &euro; <span id="eten"></span></p>
+  		</div>
+
+	</div>
+
+<div class="main">
+	<h1>Does Amsterdam fit your budget?</h1>
+	<p>Living in the Dutch capital can be demanding for your budget. This app helps you to calculate your monthly spendings.</p>
+
+		<div class="actie" id="stap1">
+			<h2>What is your income?</h2>
+
+		<form>
+			<input id="inkomen" value=""><button id="knop1" type="button">Continue</button>
+		</form>
+			<p>Fill in your earnings after taxes</p>
+		</div>
+
+		<div class="actie" id="stap2" style="display:none;">
+			<h2>What is your rent?</h2>
+
+		<form>
+			<input id="huur" value=""><button id="knop2" type="button">Continue</button>
+		</form>
+			<p>Include your parking costs</p>
+		</div>
+
+		<div class="actie" id="stap3" style="display:none;">
+			<h2>What are your utility costs?</h2>
+
+		<form>
+			<input id="kosten" value=""><button id="knop3" type="button">Continue</button>
+		</form>
+			<p>Think of your gas and electricity bill, but also include internet costs.</p>
+		</div>
+
+		<div class="actie" id="stap4" style="display:none;">
+			<h2>What do you spend on food and drinks?</h2>
+
+		<form>
+			<input id="eten" value=""><button id="knop4" type="button">Calculate</button>
+		</form>
+			<p>Try to estimate the total within a month, restaurant and bar visits included.</p>
+		</div>
+
+		<div class="actie" id="stap5" style="display:none;">
+			<h2>Thank you for your answers</h2>
+			<p>See below if your costs match your budget. If it does, you'll see how much percent you'll spent.</p>
+			<button id="reset" type="button">Try again</button>
+			<button id="details" type="button">See details</button>
+		</div>
+
+
+<div class="barcomplete">
+<h2>Your balance:</h2>
+<p style="text-align:left"></p>
+	<div class="bar">
+		<div class="progress">
+		<p><span id="percentage"></span></p>
+
+		</div>
+	</div>
+</div>
+<div class="results">
+<p id="tekst1" style="text-align:right">Your total income is &euro; <span id="demo"></span></p>
+<p id="tekst2" style="text-align:right;">Your total costs are &euro; <span id="kostenen"></span></p>
+<p id="tekst3" style="text-align:right;">This is what you've left &euro; <span id="over">0</span></p>
+</div>
+
+
+</div>
+
+
+</body>
+</html>
